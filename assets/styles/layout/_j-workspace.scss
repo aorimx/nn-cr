@@ -1,15 +1,18 @@
 // hacking "gridism.css" a little bit.
 .j-workspace {
   // won't use "wrap wider";
+  width: 100%;
   box-sizing: border-box;
   .j-wrap {
+    width: 100%;
     max-width: $max-width-screen;
     margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0;
+    padding-right: 0;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
   }
   .j-wrap-80 {
     margin: 0 auto;
