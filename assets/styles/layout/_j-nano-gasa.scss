@@ -1,0 +1,195 @@
+.nano-gasa{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-image: url("../images/contenidos/nanogasa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	@include tablet{
+		background-position: center;
+	}
+	@include mobile{
+		height: auto;
+    }
+    .nav-bar-nano{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 64px;
+        height: 91vh;
+        width: 17%;
+        @include tablet{
+            width: 25%;
+        }
+        @include mobile{
+            display: none;
+        }
+            
+    
+        ul{
+            margin-top: 88px;
+                    list-style-type: none;
+                    margin-bottom: 0 !important;
+                    padding-left: 48px;
+                    @include tablet{
+                        padding-left: 64px;
+                        margin-top: 186px;
+                    }
+                    @include mobile{
+                        display: none;
+                    }
+            
+            li{
+                            color: #929292;
+                            margin: 40px 0;
+                            @include tablet{
+                                margin: 56px 0;
+                            }
+                            a{
+                                letter-spacing: 2px;
+                                color: #929292;
+                                font-family: 'Raleway-Medium';
+                            }
+                            a:hover{
+                                font-weight: bold;
+                            }
+            
+            }
+        }
+        
+    }
+    .li-active{
+            list-style: none;
+            color: #929292;
+            position: relative;
+            font-weight: bold;
+            &:before{
+                content: "";
+                height: 1px;
+                background: #929292;
+                display: block;
+                position: absolute;
+                bottom: -2px;
+                width: 100%;
+                left: 0;
+            }
+    }
+    .li-normal{
+        list-style: none;
+        position: relative;
+        &:before{
+        width: 2em;
+        left: -2.5em;
+        content: "";
+        height: 1px;
+        background: #929292;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        }
+    }
+}
+
+.nanoG-content{
+	width: 83%;
+	height: 91vh;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	@include tablet{
+		width: 75%;
+	}
+	@include mobile{
+		width: 100%;
+		height: auto;
+		margin-top: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.idiomas{
+		display: flex;
+		position: absolute;
+		top: 64px;
+		right: 48px;
+		@include mobile{
+			display: none;
+		}
+		a{
+			p{
+				color: #929292;
+				@include tablet{
+					font-size: 17px;
+				}
+			}
+		}
+    }
+    .nanogasa-logo{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            margin-right: 80px;
+            margin-bottom: 40px;
+        }
+    }
+	.nanoG-inner{
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+		margin-bottom: 56px;
+		margin-left: 128px;
+		@include tablet{
+			margin-left: 0;
+			padding-right: 24px;
+			width: 87%;
+			margin-bottom: 184px;
+			text-align: right;
+			align-items: flex-end;
+		}
+		@include mobile{
+			padding-right: 24px;
+			width: 92%;
+			margin-bottom: 144px;
+			margin-top: 32px;
+		}
+
+		.title-nano{
+			color: black;
+			font-size: 4rem;
+			margin: 0;
+			letter-spacing: 4px;
+			font-weight: normal;
+			font-family: 'Raleway-Light';
+			line-height: 1;
+			@include mobile{
+				font-size: 2rem;
+			}
+		}
+		.subtitle-nano{
+			color: black;
+			font-weight: bold;
+			font-size: 1.3rem;
+			letter-spacing: 4px;
+			font-family: 'Raleway-Medium';
+			@include tablet{
+				margin-top: 24px;
+			}
+			@include mobile{
+				margin-top: 8px;
+			}
+		}
+		.text-content{
+			margin-top: 24px;
+			width: 85%;
+			color: black;
+		}
+
+	}
+}

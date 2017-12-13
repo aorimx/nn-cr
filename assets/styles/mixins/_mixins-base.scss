@@ -24,3 +24,8 @@
         @content;
     }
 }
+@mixin desktopmin{
+    @media screen and (max-width: $desk) {
+        @content;
+    }
+}

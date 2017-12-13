@@ -92,7 +92,7 @@ $space-5: $space-base * 5; // 40px
   src: url('fonts/Raleway-SemiBold.ttf')  format('truetype');
 }
 @font-face {
-  font-family: 'Raleway-SemiBold';
+  font-family: 'Raleway-SemiBoldItalic';
   src: url('fonts/Raleway-SemiBoldItalic.ttf')  format('truetype');
 }
 @font-face {
@@ -113,4 +113,5 @@ $font-size-base: 16px;
 // media queries
 $tablet: 900px;
 $mobile: 600px;
+$desk: 1200px;
 $max-width-screen: 1232px;

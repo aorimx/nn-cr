@@ -39,7 +39,6 @@ include ("lang_".$_SESSION["idiomas"].".php");
   <div class="home">
     <main class="j-workspace ">
         <div class="j-wrap">
-					
 						<nav role="navigation" class="navigation-mobile">
 							<ul class="ulMenuMobile">
 								<li>
@@ -72,7 +71,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
 								<a href="index.php?idioma=es">
 									<?php echo esMobile; ?>
 								</a>
-								<a href="index.php">
+								<a href="index.php?idioma=en">
 									<?php echo enMobile; ?>
 								</a>
 							</ul>
@@ -88,72 +87,71 @@ include ("lang_".$_SESSION["idiomas"].".php");
                     <img src="assets/images/recursos/logo_white.png" alt="">
                 </a>
                 <ul>
-									<li>
-										<a href="index.php" class="li-active">
-											<?php echo inicio; ?>
-										</a>
-									</li>
-									<li>
-										<a href="nosotros.php" class="li-normal">
-											<?php echo nosotros; ?>
-										</a>
-									</li>
-									<li>
-										<a href="industrias.php" class="li-normal">
-											<?php echo industrias; ?>	
-										</a>
-									</li>
-									<li>
-										<a href="tienda.php" class="li-normal">
-											<?php echo tienda; ?>
-										</a>
-									</li>
-									<li>
-										<a href="contacto.php" class="li-normal">
-											<?php echo contacto; ?>
-										</a>
-									</li>
+					<li>
+						<a href="index.php" class="li-active">
+							<?php echo inicio; ?>
+						</a>
+					</li>
+					<li>
+						<a href="nosotros.php" class="li-normal">
+							<?php echo nosotros; ?>
+						</a>
+					</li>
+					<li>
+						<a href="industrias.php" class="li-normal">
+							<?php echo industrias; ?>	
+						</a>
+					</li>
+					<li>
+						<a href="tienda.php" class="li-normal">
+							<?php echo tienda; ?>
+						</a>
+					</li>
+					<li>
+						<a href="contacto.php" class="li-normal">
+							<?php echo contacto; ?>
+						</a>
+					</li>
                 </ul>
-						</nav>
-						<div class="home-content">
-								<a class="logo-mobile" href="http://nanocreaciones.com/">
+			</nav>
+			<div class="home-content">
+				<a class="logo-mobile" href="http://nanocreaciones.com/">
                     <img src="assets/images/recursos/logo_white.png" alt="">
-                </a>
-							<div class="idiomas">
-								<a href="index.php?idioma=en"><?php echo en; ?></a>
-								<a href="index.php?idioma=es"><?php echo es; ?></a>
-							</div>
-							<div class="home-inner">
-									<h2 class="title-nano"><?php echo titleHome; ?></h2>
-									<p class="subtitle-nano"><?php echo subtitleHome; ?></p>
-									<p class="text-content"><?php echo textHome; ?></p>
-							</div>
-						</div>
+            	</a>
+				<div class="idiomas">
+					<a href="index.php?idioma=en"><?php echo en; ?></a>
+					<a href="index.php?idioma=es"><?php echo es; ?></a>
+				</div>
+				<div class="home-inner">
+					<h2 class="title-nano"><?php echo titleHome; ?></h2>
+					<p class="subtitle-nano"><?php echo subtitleHome; ?></p>								<p class="text-content"><?php echo textHome; ?></p>
+				</div>
+			</div>
         </div>
         <footer>
-					<div class="j-wrap">
-						<div class="tag">
-							<span>HIGH TECHNOLOGY</span>
-						</div>
-						<div class="copy-tablet">
-							<p class="copyright"><?php echo copy; ?></p>
-							<a href="#" class="politicas"><?php echo aviso; ?></a>
-						</div>
-						<p class="copyright text-desktop"><?php echo copy; ?></p>
-						<a class="text-desktop" href="#">LOG IN</a>
-						<a href="#" class="politicas text-desktop"><?php echo aviso; ?></a>
-						<div class="social-networks">
-							<a href="">
-								<img src="assets/images/recursos/mail_white.png" alt="">
-							</a>
-							<a href="">
-								<img src="assets/images/recursos/facebook_white.png" alt="">
-							</a>
-							<a href="">
-								<img src="assets/images/recursos/twitter_white.png" alt="">
-							</a>
-						</div>
-					</div>
+			<div class="j-wrap">
+				<div class="tag">
+					<span>HIGH TECHNOLOGY</span>
+				</div>
+				<div class="copy-tablet">
+					<p class="copyright"><?php echo copy; ?></p>
+					<a href="#" class="politicas"><?php echo aviso; ?></a>
+				</div>
+				<p class="copyright text-desktop"><?php echo copy; ?></p>
+				<a class="text-desktop" href="#">LOG IN</a>
+				<a href="#" class="politicas text-desktop"><?php echo aviso; ?></a>
+				<div class="social-networks">
+					<a href="">
+						<img src="assets/images/recursos/mail_white.png" alt="">
+					</a>
+					<a href="">
+						<img src="assets/images/recursos/facebook_white.png" alt="">
+					</a>
+					<a href="">
+						<img src="assets/images/recursos/twitter_white.png" alt="">
+					</a>
+				</div>
+			</div>
         </footer>
     </main>
   </div>

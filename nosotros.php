@@ -33,10 +33,101 @@ include ("lang_".$_SESSION["idiomas"].".php");
   <link href="./assets/styles/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="nosotros-body">
   <!--  Header  -->
-
-  <div class="home">
+	<div class="box-white">
+	</div>
+	<div class="box-image">
+		<div class="nosotros">
+			<main class="j-workspace ">
+					<div class="j-wrap">
+							<nav role="navigation" class="navigation-mobile">
+								<ul class="ulMenuMobile">
+									<li>
+										<a href="index.php" class="li-normal">
+											<?php echo inicio; ?>
+										</a>
+									</li>
+									<li>
+										<a href="nosotros.php" class="li-active">
+											<?php echo nosotros; ?>
+										</a>
+									</li>
+									<li>
+										<a href="industrias.php" class="li-normal">
+											<?php echo industrias; ?>	
+										</a>
+									</li>
+									<li>
+										<a href="tienda.php" class="li-normal">
+											<?php echo tienda; ?>
+										</a>
+									</li>
+									<li>
+										<a href="contacto.php" class="li-normal">
+											<?php echo contacto; ?>
+										</a>
+									</li>
+								</ul>
+								<ul class="idiomas-responsive">
+									<a href="nosotros.php?idioma=es">
+										<?php echo esMobile; ?>
+									</a>
+									<a href="nosotros.php?idioma=en">
+										<?php echo enMobile; ?>
+									</a>
+								</ul>
+							</nav>
+							<div class="nav-icon">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="nosotros-content">
+								<a class="logo-mobile" href="http://nanocreaciones.com/">
+									<img src="assets/images/recursos/Logo_nano_gris.png" alt="">
+								</a>
+								<div class="idiomas">
+									<a href="nosotros.php?idioma=en"><?php echo en; ?></a>
+									<a href="nosotros.php?idioma=es"><?php echo es; ?></a>
+								</div>
+								<div class="nosotros-inner">
+									<h2 class="title-nano"><?php echo titleNosotros; ?></h2>
+									<p class="subtitle-nano"><?php echo subtitleNosotros; ?></p>
+									<p class="text-content"><?php echo textNosotros; ?></p>
+									<p class="text-content"><?php echo textNosotros2; ?></p>
+								</div>
+							</div>
+						</div>
+					<footer>
+						<div class="j-wrap-nosotros">
+							<div class="tag">
+								<span>HIGH TECHNOLOGY</span>
+							</div>
+							<div class="copy-tablet">
+								<p class="copyright"><?php echo copy; ?></p>
+								<a href="#" class="politicas"><?php echo aviso; ?></a>
+							</div>
+							<p class="copyright text-desktop"><?php echo copy; ?></p>
+							<a class="text-desktop" href="#">LOG IN</a>
+							<a href="#" class="politicas text-desktop"><?php echo aviso; ?></a>
+							<div class="social-networks">
+								<a href="">
+									<img src="assets/images/recursos/mail_white.png" alt="">
+								</a>
+								<a href="">
+									<img src="assets/images/recursos/facebook_white.png" alt="">
+								</a>
+								<a href="">
+									<img src="assets/images/recursos/twitter_white.png" alt="">
+								</a>
+							</div>
+						</div>
+					</footer>
+			</main>
+		</div>
+	</div>
+	<div class="nosotros">
     <main class="j-workspace ">
         <div class="j-wrap">
             <nav class="nav-bar-nano">
@@ -44,72 +135,78 @@ include ("lang_".$_SESSION["idiomas"].".php");
                     <img src="assets/images/recursos/Logo_nano_gris.png" alt="">
                 </a>
                 <ul>
-					<li>
-						<a href="index.php" class="li-normal">
-							<?php echo inicio; ?>
-						</a>
-					</li>
-					<li>
-						<a href="nosotros.php" class="li-active">
-							<?php echo nosotros; ?>
-						</a>
-					</li>
-					<li>
-					    <a href="industrias.php" class="li-normal">
-							<?php echo industrias; ?>	
-						</a>
-					</li>
-					<li>
-						<a href="tienda.php" class="li-normal">
-							<?php echo tienda; ?>
-						</a>
-					</li>
-					<li>
-						<a href="contacto.php" class="li-normal">
-							<?php echo contacto; ?>
-						</a>
-					</li>
+									<li>
+										<a href="index.php" class="li-normal">
+											<?php echo inicio; ?>
+										</a>
+									</li>
+									<li>
+										<a href="nosotros.php" class="li-active">
+											<?php echo nosotros; ?>
+										</a>
+									</li>
+									<li>
+										<a href="industrias.php" class="li-normal">
+											<?php echo industrias; ?>	
+										</a>
+									</li>
+									<li>
+										<a href="tienda.php" class="li-normal">
+											<?php echo tienda; ?>
+										</a>
+									</li>
+									<li>
+										<a href="contacto.php" class="li-normal">
+											<?php echo contacto; ?>
+										</a>
+									</li>
                 </ul>
-			</nav>
-			<div class="home-content">
-				<div class="idiomas">
-					<a href="nosotros.php?idioma=en"><?php echo en; ?></a>
-					<a href="nosotros.php?idioma=es"><?php echo es; ?></a>
-				</div>
-				<div class="home-inner">
-					<h2 class="title-nano"><?php echo titleHome; ?></h2>
-					<p class="subtitle-nano"><?php echo subtitleHome; ?></p>
-					<p class="text-content"><?php echo textHome; ?></p>
-				</div>
-			</div>
-        </div>
+						</nav>
+						<div class="nosotros-content">
+							<a class="logo-mobile" href="http://nanocreaciones.com/">
+								<img src="assets/images/recursos/logo_white.png" alt="">
+							</a>
+							<div class="idiomas">
+								<a href="nosotros.php?idioma=en"><?php echo en; ?></a>
+								<a href="nosotros.php?idioma=es"><?php echo es; ?></a>
+							</div>
+							<div class="nosotros-inner">
+								<h2 class="title-nano"><?php echo titleNosotros; ?></h2>
+								<p class="subtitle-nano"><?php echo subtitleNosotros; ?></p>
+								<p class="text-content"><?php echo textNosotros; ?></p>
+								<p class="text-content"><?php echo textNosotros2; ?></p>
+							</div>
+						</div>
+        	</div>
         <footer>
-			<div class="j-wrap">
-				<div class="tag">
-					<span>HIGH TECHNOLOGY</span>
-				</div>
-				<p class="copyright"><?php echo copy; ?></p>
-				<a href="#">LOG IN</a>
-				<a href="#" class="politicas"><?php echo aviso; ?></a>
-				<div class="social-networks">
-					<a href="">
-						<img src="assets/images/recursos/mail_white.png" alt="">
-					</a>
-					<a href="">
-						<img src="assets/images/recursos/facebook_white.png" alt="">						</a>
-					<a href="">
-						<img src="assets/images/recursos/twitter_white.png" alt="">
-					</a>
-				</div>
-			</div>
+					<div class="j-wrap-nosotros">
+						<div class="tag">
+							<span>HIGH TECHNOLOGY</span>
+						</div>
+						<div class="copy-tablet">
+							<p class="copyright"><?php echo copy; ?></p>
+							<a href="#" class="politicas"><?php echo aviso; ?></a>
+						</div>
+						<p class="copyright text-desktop"><?php echo copy; ?></p>
+						<a class="text-desktop" href="#">LOG IN</a>
+						<a href="#" class="politicas text-desktop"><?php echo aviso; ?></a>
+						<div class="social-networks">
+							<a href="">
+								<img src="assets/images/recursos/mail_white.png" alt="">
+							</a>
+							<a href="">
+								<img src="assets/images/recursos/facebook_white.png" alt="">
+							</a>
+							<a href="">
+								<img src="assets/images/recursos/twitter_white.png" alt="">
+							</a>
+						</div>
+					</div>
         </footer>
     </main>
   </div>
 
-
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-
-
+	<script src="assets/scripts/mobile-menu.js"></script>
 </body>
 </html>

@@ -52,8 +52,8 @@
   }
 
   .menuMovilBlock{
-      height: auto;
-      width: 200px;
+      height: 100%;
+      width: 100%;
       background: #458c98;
       display: flex;
       flex-direction: column;
@@ -97,3 +97,39 @@
     }
   }
 
+.nosotros{
+  .nav-icon{
+    
+    background:transparent;
+    
+    span{
+      display: block;
+      width: 40px;
+      height: 6px;
+      background: #929292;
+      border-radius: 10px;
+      margin: 4px;
+      transition: 0.5s;
+    }
+  }
+  .menuMovilBlock{
+    background: #fff;
+    
+
+    .ulMenuMobile{
+        li{
+            a{
+              color: #929292;
+            }
+        }
+    }
+  }
+  .idiomas-responsive{
+    padding-left: 0 !important;
+      a{
+        p{
+          color: #929292;
+        }
+      }
+  }
+}
