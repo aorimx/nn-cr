@@ -42,36 +42,36 @@ include ("lang_".$_SESSION["idiomas"].".php");
 						<nav role="navigation" class="navigation-mobile">
 							<ul class="ulMenuMobile">
 								<li>
-									<a href="index.php" class="li-active">
+									<a href="index" class="li-active">
 										<?php echo inicio; ?>
 									</a>
 								</li>
 								<li>
-									<a href="nosotros.php" class="li-normal">
+									<a href="nosotros" class="li-normal">
 										<?php echo nosotros; ?>
 									</a>
 								</li>
 								<li>
-									<a href="industrias.php" class="li-normal">
+									<a href="industrias" class="li-normal">
 										<?php echo industrias; ?>	
 									</a>
 								</li>
 								<li>
-									<a href="tienda.php" class="li-normal">
+									<a href="#" class="li-normal">
 										<?php echo tienda; ?>
 									</a>
 								</li>
 								<li>
-									<a href="contacto.php" class="li-normal">
+									<a href="contacto" class="li-normal">
 										<?php echo contacto; ?>
 									</a>
 								</li>
 							</ul>
 							<ul class="idiomas-responsive">
-								<a href="index.php?idioma=es">
+								<a href="index?idioma=es">
 									<?php echo esMobile; ?>
 								</a>
-								<a href="index.php?idioma=en">
+								<a href="index?idioma=en">
 									<?php echo enMobile; ?>
 								</a>
 							</ul>
@@ -88,27 +88,27 @@ include ("lang_".$_SESSION["idiomas"].".php");
                 </a>
                 <ul>
 					<li>
-						<a href="index.php" class="li-active">
+						<a href="index" class="li-active">
 							<?php echo inicio; ?>
 						</a>
 					</li>
 					<li>
-						<a href="nosotros.php" class="li-normal">
+						<a href="nosotros" class="li-normal">
 							<?php echo nosotros; ?>
 						</a>
 					</li>
 					<li>
-						<a href="industrias.php" class="li-normal">
+						<a href="industrias" class="li-normal">
 							<?php echo industrias; ?>	
 						</a>
 					</li>
 					<li>
-						<a href="tienda.php" class="li-normal">
+						<a href="#" class="li-normal">
 							<?php echo tienda; ?>
 						</a>
 					</li>
 					<li>
-						<a href="contacto.php" class="li-normal">
+						<a href="contacto" class="li-normal">
 							<?php echo contacto; ?>
 						</a>
 					</li>
@@ -119,8 +119,8 @@ include ("lang_".$_SESSION["idiomas"].".php");
                     <img src="assets/images/recursos/logo_white.png" alt="">
             	</a>
 				<div class="idiomas">
-					<a href="index.php?idioma=en"><?php echo en; ?></a>
-					<a href="index.php?idioma=es"><?php echo es; ?></a>
+					<a href="index?idioma=en"><?php echo en; ?></a>
+					<a href="index?idioma=es"><?php echo es; ?></a>
 				</div>
 				<div class="home-inner">
 					<h2 class="title-nano"><?php echo titleHome; ?></h2>

@@ -97,7 +97,7 @@
     }
   }
 
-.nosotros{
+.nosotros, .nano-gasa, .industrias{
   .nav-icon{
     
     background:transparent;
@@ -132,4 +132,17 @@
         }
       }
   }
+}
+
+.nano-gasa, .industrias{
+  
+  .menuMovilBlock{
+   
+
+    .ulMenuMobile{
+      margin-bottom: 0;
+        padding-top: 0;
+    }
+  }
+  
 }

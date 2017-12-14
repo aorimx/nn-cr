@@ -229,7 +229,7 @@ footer {
     .tag{
       position: absolute;
       right: -64px;
-      top: -184px;
+      top: -120px;
       transform: rotate(90deg);
       @include tablet{
         right: -48px;
@@ -251,6 +251,11 @@ footer {
       @include tablet{
         display: flex;
         flex-direction: column;
+      }
+    }
+    .text-desktop{
+      @include tablet{
+        display: none;
       }
     }
 

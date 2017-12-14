@@ -38,42 +38,50 @@ include ("lang_".$_SESSION["idiomas"].".php");
 	<div class="box-white">
 	</div>
 	<div class="box-image">
-		<div class="nosotros">
+		<div class="industrias">
 			<main class="j-workspace ">
 					<div class="j-wrap">
 							<nav role="navigation" class="navigation-mobile">
 								<ul class="ulMenuMobile">
 									<li>
-										<a href="index.php" class="li-normal">
+										<a href="index" class="li-normal">
 											<?php echo inicio; ?>
 										</a>
 									</li>
 									<li>
-										<a href="nosotros.php" class="li-normal">
+										<a href="nosotros" class="li-normal">
 											<?php echo nosotros; ?>
 										</a>
 									</li>
 									<li>
-										<a href="industrias.php" class="li-active">
+										<a href="industrias" class="li-active">
 											<?php echo industrias; ?>	
 										</a>
+										<ul class="sub-menu">
+											<li>
+												<a href="nano-gasa"><?php echo nanoG; ?></a>
+											</li>
+											<li>
+												<a href="neuralmove"><?php echo neural; ?></a>
+											</li>
+										</ul>
 									</li>
 									<li>
-										<a href="tienda.php" class="li-normal">
+										<a href="#" class="li-normal">
 											<?php echo tienda; ?>
 										</a>
 									</li>
 									<li>
-										<a href="contacto.php" class="li-normal">
+										<a href="contacto" class="li-normal">
 											<?php echo contacto; ?>
 										</a>
 									</li>
 								</ul>
 								<ul class="idiomas-responsive">
-									<a href="industrias.php?idioma=es">
+									<a href="industrias?idioma=es">
 										<?php echo esMobile; ?>
 									</a>
-									<a href="industrias.php?idioma=en">
+									<a href="industrias?idioma=en">
 										<?php echo enMobile; ?>
 									</a>
 								</ul>
@@ -83,13 +91,13 @@ include ("lang_".$_SESSION["idiomas"].".php");
 								<span></span>
 								<span></span>
 							</div>
-							<div class="nosotros-content">
+							<div class="industrias-content">
 								<a class="logo-mobile" href="http://nanocreaciones.com/">
 									<img src="assets/images/recursos/Logo_nano_gris.png" alt="">
 								</a>
 								<div class="idiomas">
-									<a href="nosotros.php?idioma=en"><?php echo en; ?></a>
-									<a href="nosotros.php?idioma=es"><?php echo es; ?></a>
+									<a href="nosotros?idioma=en"><?php echo en; ?></a>
+									<a href="nosotros?idioma=es"><?php echo es; ?></a>
 								</div>
 								<div class="nosotros-inner">
 									<p class="subtitle-nano"><?php echo subtitleIndustria; ?></p>
@@ -135,35 +143,35 @@ include ("lang_".$_SESSION["idiomas"].".php");
                 </a>
                 <ul>
 									<li>
-										<a href="index.php" class="li-normal">
+										<a href="index" class="li-normal">
 											<?php echo inicio; ?>
 										</a>
 									</li>
 									<li>
-										<a href="nosotros.php" class="li-normal">
+										<a href="nosotros" class="li-normal">
 											<?php echo nosotros; ?>
 										</a>
 									</li>
 									<li>
-										<a href="industrias.php" class="li-active">
+										<a href="industrias" class="li-active">
 											<?php echo industrias; ?>	
 										</a>
 										<ul class="sub-menu">
 											<li>
-												<a href="nano-gasa.php"><?php echo nanoG; ?></a>
+												<a href="nano-gasa"><?php echo nanoG; ?></a>
 											</li>
 											<li>
-												<a href="neuralmove.php"><?php echo neural; ?></a>
+												<a href="neuralmove"><?php echo neural; ?></a>
 											</li>
 										</ul>
 									</li>
 									<li>
-										<a href="tienda.php" class="li-normal">
+										<a href="#" class="li-normal">
 											<?php echo tienda; ?>
 										</a>
 									</li>
 									<li>
-										<a href="contacto.php" class="li-normal">
+										<a href="contacto" class="li-normal">
 											<?php echo contacto; ?>
 										</a>
 									</li>
@@ -174,8 +182,8 @@ include ("lang_".$_SESSION["idiomas"].".php");
 								<img src="assets/images/recursos/logo_white.png" alt="">
 							</a>
 							<div class="idiomas">
-								<a href="industrias.php?idioma=en"><?php echo en; ?></a>
-								<a href="industrias.php?idioma=es"><?php echo es; ?></a>
+								<a href="industrias?idioma=en"><?php echo en; ?></a>
+								<a href="industrias?idioma=es"><?php echo es; ?></a>
 							</div>
 							<div class="nosotros-inner">
 								<p class="subtitle-nano"><?php echo subtitleIndustria; ?></p>

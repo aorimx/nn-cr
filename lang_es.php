@@ -29,6 +29,11 @@
     define("subtitleIndustria", "INDUSTRIA");
     define("textIndustria", "El propósito de esta rama es el generar tecnologías que contribuyan en la solución de problemas en el campo de los cuidados de la salud. Teniendo como base la nanotecnología, la biología molecular y la medicina. Proveemos tecnología de alto valor en el cuidado, diagnóstico y monitoreo de distintas condiciones médicas, con el objetivo de mejorar la calidad de vida del ser humano.");
 
+    //Nano Gasa
+    define("textNanoG", "La NanoGasa® es un apósito auxiliar en el tratamiento de heridas.");
+    define("textNanoG2", "Está elaborada en algodón tejido en una malla ultra fina, impregnada de compuestos nanoestructurados de plata en cada una de sus fibras, lo que contribuye a la eliminación de hongos y bacterias que puedan estar presentes o que se encuentren en contacto con la herida. Además de evitar la formación de dichos microorganismos durante su correcto uso.");
+    define("buttonNanoG", "IR AL SITIO WEB");
+
     //footer general
     define("copy", "Copyright © Nano Creaciones. Todos los derechos reservados.");
     define("aviso", "Políticas de privacidad");

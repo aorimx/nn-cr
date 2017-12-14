@@ -42,44 +42,44 @@ include ("lang_".$_SESSION["idiomas"].".php");
 					<nav role="navigation" class="navigation-mobile">
 							<ul class="ulMenuMobile">
 								<li>
-									<a href="index.php" class="li-normal">
+									<a href="index" class="li-normal">
 										<?php echo inicio; ?>
 									</a>
 								</li>
 								<li>
-									<a href="nosotros.php" class="li-normal">
+									<a href="nosotros" class="li-normal">
 										<?php echo nosotros; ?>
 									</a>
 								</li>
 								<li>
-									<a href="industrias.php" class="li-normal">
+									<a href="industrias" class="li-normal">
 										<?php echo industrias; ?>	
 									</a>
 									<ul class="sub-menu">
 											<li>
-												<a href="nano-gasa.php" class="li-active"><?php echo nanoG; ?></a>
+												<a href="nano-gasa" class="li-active"><?php echo nanoG; ?></a>
 											</li>
 											<li>
-												<a href="neuralmove.php"><?php echo neural; ?></a>
+												<a href="neuralmove"><?php echo neural; ?></a>
 											</li>
 									</ul>
 								</li>
 								<li>
-									<a href="tienda.php" class="li-normal">
+									<a href="#" class="li-normal">
 										<?php echo tienda; ?>
 									</a>
 								</li>
 								<li>
-									<a href="contacto.php" class="li-normal">
+									<a href="contacto" class="li-normal">
 										<?php echo contacto; ?>
 									</a>
 								</li>
 							</ul>
 							<ul class="idiomas-responsive">
-								<a href="nano-gasa.php?idioma=es">
+								<a href="nano-gasa?idioma=es">
 									<?php echo esMobile; ?>
 								</a>
-								<a href="nano-gasa.php?idioma=en">
+								<a href="nano-gasa?idioma=en">
 									<?php echo enMobile; ?>
 								</a>
 							</ul>
@@ -96,35 +96,35 @@ include ("lang_".$_SESSION["idiomas"].".php");
                 </a>
                 <ul>
 									<li>
-										<a href="index.php" class="li-normal">
+										<a href="index" class="li-normal">
 											<?php echo inicio; ?>
 										</a>
 									</li>
 									<li>
-										<a href="nosotros.php" class="li-normal">
+										<a href="nosotros" class="li-normal">
 											<?php echo nosotros; ?>
 										</a>
 									</li>
 									<li>
-										<a href="industrias.php" class="li-normal" style="font-weight: bold;">
+										<a href="industrias" class="li-normal" style="font-weight: bold;">
 											<?php echo industrias; ?>	
 										</a>
 										<ul class="sub-menu">
 											<li>
-												<a href="nano-gasa.php" class="li-active"><?php echo nanoG; ?></a>
+												<a href="nano-gasa" class="li-active"><?php echo nanoG; ?></a>
 											</li>
 											<li>
-												<a href="neuralmove.php"><?php echo neural; ?></a>
+												<a href="neuralmove"><?php echo neural; ?></a>
 											</li>
 										</ul>
 									</li>
 									<li>
-										<a href="tienda.php" class="li-normal">
+										<a href="#" class="li-normal">
 											<?php echo tienda; ?>
 										</a>
 									</li>
 									<li>
-										<a href="contacto.php" class="li-normal">
+										<a href="contacto" class="li-normal">
 											<?php echo contacto; ?>
 										</a>
 									</li>
@@ -132,18 +132,24 @@ include ("lang_".$_SESSION["idiomas"].".php");
 					</nav>
 					<div class="nanoG-content">
 						<a class="logo-mobile" href="http://nanocreaciones.com/">
-								<img src="assets/images/recursos/logo_white.png" alt="">
+								<img src="assets/images/recursos/Logo_nano_gris.png" alt="">
 						</a>
 						<div class="idiomas">
-							<a href="nano-gasa.php?idioma=en"><?php echo en; ?></a>
-							<a href="nano-gasa.php?idioma=es"><?php echo es; ?></a>
+							<a href="nano-gasa?idioma=en"><?php echo en; ?></a>
+							<a href="nano-gasa?idioma=es"><?php echo es; ?></a>
 						</div>
 						<div class="nanogasa-logo">
 							<img src="assets/images/contenidos/nanogasa_logo.png" alt="">
 						</div>
-						<div class="nanoG-inner">
-							<p class="text-content"><?php echo textHome; ?></p>
-							<p class="text-content"><?php echo textHome; ?></p>
+						<div class="nanogasa-container">
+							<div class="nanogasa-product">
+								<img src="assets/images/contenidos/nanogasaProduct.png" alt="">
+							</div>
+							<div class="nanoG-inner">
+								<p class="text-content"><?php echo textNanoG; ?></p>
+								<p class="text-content"><?php echo textNanoG2; ?></p>
+								<a href="#"><button><?php echo buttonNanoG; ?></button></a>
+							</div>
 						</div>
 					</div>
         </div>
@@ -160,13 +166,13 @@ include ("lang_".$_SESSION["idiomas"].".php");
 						<a href="#" class="politicas text-desktop"><?php echo aviso; ?></a>
 						<div class="social-networks">
 							<a href="">
-								<img src="assets/images/recursos/mail_white.png" alt="">
+								<img src="assets/images/recursos/mail_gris.png" alt="">
 							</a>
 							<a href="">
-								<img src="assets/images/recursos/facebook_white.png" alt="">
+								<img src="assets/images/recursos/facebook_gris.png" alt="">
 							</a>
 							<a href="">
-								<img src="assets/images/recursos/twitter_white.png" alt="">
+								<img src="assets/images/recursos/twitter_gris.png" alt="">
 							</a>
 						</div>
 					</div>

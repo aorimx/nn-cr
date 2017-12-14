@@ -134,62 +134,120 @@
         width: 100%;
         display: flex;
         justify-content: flex-end;
+        margin-top: 200px;
         img{
+            height: 64px;
             margin-right: 80px;
             margin-bottom: 40px;
+            @include mobile{
+                margin: 0;
+            }
+        }
+        @include mobile{
+            margin-top: 40px;
+            width: 88%;
+        }
+    }
+    .nanogasa-container{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 24px;
+        @include tablet{
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        }
+        @include mobile{
+            padding: 0;
+        }
+
+        .nanogasa-product{
+            order: 1;
+            margin-left: 56px;
+            width: 50%;
+            display: flex;
+            height: 400px;
+            img{
+                width: auto;
+                height: 344px;
+                @include tablet{
+                    height: 216px;
+                    margin-bottom: 0;
+                }
+                @include mobile{
+                    height: 184px;
+                }
+            }
+            @include tablet{
+                order: 2;
+                width: 70%;
+                height: 224px;
+                justify-content: flex-end;
+                padding-right: 24px;
+            }
+            @include mobile{
+                padding: 0;
+                margin: 0;
+            }
         }
     }
 	.nanoG-inner{
+        order: 2;
 		display: flex;
 		flex-direction: column;
-		width: 70%;
+		width: 40%;
 		margin-bottom: 56px;
-		margin-left: 128px;
+		margin-left: 48px;
 		@include tablet{
+            order: 1;
 			margin-left: 0;
-			padding-right: 24px;
+			padding-right: 40px;
 			width: 87%;
-			margin-bottom: 184px;
+			margin-bottom: 64px;
 			text-align: right;
 			align-items: flex-end;
 		}
 		@include mobile{
-			padding-right: 24px;
+            padding-right: 0;
+            align-items: center;
 			width: 92%;
-			margin-bottom: 144px;
+			margin-bottom: 56px;
 			margin-top: 32px;
 		}
 
-		.title-nano{
-			color: black;
-			font-size: 4rem;
-			margin: 0;
-			letter-spacing: 4px;
-			font-weight: normal;
-			font-family: 'Raleway-Light';
-			line-height: 1;
-			@include mobile{
-				font-size: 2rem;
-			}
-		}
-		.subtitle-nano{
-			color: black;
-			font-weight: bold;
-			font-size: 1.3rem;
-			letter-spacing: 4px;
-			font-family: 'Raleway-Medium';
-			@include tablet{
-				margin-top: 24px;
-			}
-			@include mobile{
-				margin-top: 8px;
-			}
-		}
 		.text-content{
-			margin-top: 24px;
-			width: 85%;
-			color: black;
-		}
+			margin-top: 0;
+			width: 90%;
+            color: black;
+            font-size: 12px;
+            font-family: 'Raleway-Medium';
+            @include tablet{
+                width: 80%;
+            }
+            @include mobile{
+                width: 95%;
+                text-align: center;
+            }
+        }
+        button{
+            background: transparent;
+            border: 1px solid #000;
+            text-transform: uppercase;
+            padding: 10px 2em;
+            color: #000;
+            border-radius: 0;
+            font-size: 14px;
+            font-family: 'Raleway-Medium';
+            font-weight: normal;
+            margin-bottom: 0;
+            margin-top: 32px;
+        }
+        button:hover{
+            background: #8dedf8;
+            border: 1px solid #8dedf8;
+            color: #fff;
+        }
 
 	}
 }

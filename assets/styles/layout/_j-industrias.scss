@@ -39,7 +39,7 @@
             height: auto;
             box-shadow: inset 0px 0px 176px rgba(0, 0, 0, 0.1);
         }
-        .nosotros{
+        .industrias{
             display: none;
             @include mobile{
                 display: flex;
@@ -127,7 +127,7 @@
                 bottom: 0;
                 }
             }
-            .nosotros-content{
+            .industrias-content{
                 width: 83%;
                 height: 91vh;
                 display: flex;
@@ -436,6 +436,7 @@
 .sub-menu{
     margin-top: 0 !important;
     padding-left: 0 !important;
+    list-style: none;
     li{
         margin: 16px 0 !important;
     }
