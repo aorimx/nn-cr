@@ -44,7 +44,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
 							<nav role="navigation" class="navigation-mobile">
 								<ul class="ulMenuMobile">
 									<li>
-										<a href="index" class="li-normal">
+										<a href="./" class="li-normal">
 											<?php echo inicio; ?>
 										</a>
 									</li>
@@ -136,7 +136,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
                 </a>
                 <ul>
 									<li>
-										<a href="index" class="li-normal">
+										<a href="./" class="li-normal">
 											<?php echo inicio; ?>
 										</a>
 									</li>

@@ -29,6 +29,14 @@
       define("subtitleIndustria", "MEDICAl");
       define("textIndustria", "The purpose of this branch is to generate technologies that contribute to the solution of problems in the field of health care. Based on nanotechnology, molecular biology and medicine. We provide technology of high value in the care, diagnosis and monitoring of different medical conditions, with the aim of improving the quality of life of the human being.");
 
+      //nano Gasa 
+      define("textNanoG", "NanoGasa® is an auxiliary dressing in the treatment of wounds.");
+      define("textNanoG2", "It is made of cotton woven in an ultra-fine mesh, impregnated with nanostructured silver compounds in each of its fibers, which contributes to the elimination of fungi and bacteria that may be present or that are in contact with the wound. Besides avoiding the formation of said microorganisms during their correct use.");
+      define("buttonNanoG", "GO TO WEBSITE");
+
+      //neuralmove
+      define("textNeural", "The Neuralmove® is a neurostimulator whose components are nano-sized, which makes it possible for the device to be so small that it can be implanted in areas of great surgical complexity, potentiating the electrical impulses in this area so that the patient can recover his mobility.");
+      
     
     //footer general
     define("copy", "Copyright © Nano Creaciones. All rights reserved.");

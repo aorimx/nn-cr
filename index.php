@@ -42,7 +42,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
 						<nav role="navigation" class="navigation-mobile">
 							<ul class="ulMenuMobile">
 								<li>
-									<a href="index" class="li-active">
+									<a href="./" class="li-active">
 										<?php echo inicio; ?>
 									</a>
 								</li>
@@ -68,10 +68,10 @@ include ("lang_".$_SESSION["idiomas"].".php");
 								</li>
 							</ul>
 							<ul class="idiomas-responsive">
-								<a href="index?idioma=es">
+								<a href="./?idioma=es">
 									<?php echo esMobile; ?>
 								</a>
-								<a href="index?idioma=en">
+								<a href="./?idioma=en">
 									<?php echo enMobile; ?>
 								</a>
 							</ul>
@@ -88,7 +88,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
                 </a>
                 <ul>
 					<li>
-						<a href="index" class="li-active">
+						<a href="./" class="li-active">
 							<?php echo inicio; ?>
 						</a>
 					</li>
@@ -119,8 +119,8 @@ include ("lang_".$_SESSION["idiomas"].".php");
                     <img src="assets/images/recursos/logo_white.png" alt="">
             	</a>
 				<div class="idiomas">
-					<a href="index?idioma=en"><?php echo en; ?></a>
-					<a href="index?idioma=es"><?php echo es; ?></a>
+					<a href="./?idioma=en"><?php echo en; ?></a>
+					<a href="./?idioma=es"><?php echo es; ?></a>
 				</div>
 				<div class="home-inner">
 					<h2 class="title-nano"><?php echo titleHome; ?></h2>

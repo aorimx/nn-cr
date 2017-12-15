@@ -24,7 +24,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Nano | Nano Gasa</title>
+  <title>Nano | Neuralmove</title>
   <link rel="icon" type="image/png" href="https://dummyimage.com/64x64/000/fff" sizes="64x64">
   <link rel="icon" type="image/png" href="https://dummyimage.com/180x180/000/fff" sizes="180x180">
   <!-- [#TODO] Dont forget to update the FAVICON IMAGES in the next route -->
@@ -36,8 +36,9 @@ include ("lang_".$_SESSION["idiomas"].".php");
 <body>
   <!--  Header  -->
 
-  <div class="nano-gasa">
+  <div class="neuralmove">
     <main class="j-workspace ">
+				<img class="neural-mano" src="assets/images/contenidos/neuralmoveMano.png" alt="">
         <div class="j-wrap">
 					<nav role="navigation" class="navigation-mobile">
 							<ul class="ulMenuMobile">
@@ -57,10 +58,10 @@ include ("lang_".$_SESSION["idiomas"].".php");
 									</a>
 									<ul class="sub-menu">
 											<li>
-												<a href="nano-gasa" class="li-active"><?php echo nanoG; ?></a>
+												<a href="nano-gasa"><?php echo nanoG; ?></a>
 											</li>
 											<li>
-												<a href="neuralmove"><?php echo neural; ?></a>
+												<a href="neuralmove" class="li-active"><?php echo neural; ?></a>
 											</li>
 									</ul>
 								</li>
@@ -76,10 +77,10 @@ include ("lang_".$_SESSION["idiomas"].".php");
 								</li>
 							</ul>
 							<ul class="idiomas-responsive">
-								<a href="nano-gasa?idioma=es">
+								<a href="neuralmove?idioma=es">
 									<?php echo esMobile; ?>
 								</a>
-								<a href="nano-gasa?idioma=en">
+								<a href="neuralmove?idioma=en">
 									<?php echo enMobile; ?>
 								</a>
 							</ul>
@@ -111,10 +112,10 @@ include ("lang_".$_SESSION["idiomas"].".php");
 										</a>
 										<ul class="sub-menu">
 											<li>
-												<a href="nano-gasa" class="li-active"><?php echo nanoG; ?></a>
+												<a href="nano-gasa"><?php echo nanoG; ?></a>
 											</li>
 											<li>
-												<a href="neuralmove"><?php echo neural; ?></a>
+												<a href="neuralmove" class="li-active"><?php echo neural; ?></a>
 											</li>
 										</ul>
 									</li>
@@ -130,26 +131,25 @@ include ("lang_".$_SESSION["idiomas"].".php");
 									</li>
                 </ul>
 					</nav>
-					<div class="nanoG-content">
+					<div class="neural-content">
 						<a class="logo-mobile" href="http://nanocreaciones.com/">
 								<img src="assets/images/recursos/Logo_nano_gris.png" alt="">
 						</a>
 						<div class="idiomas">
-							<a href="nano-gasa?idioma=en"><?php echo en; ?></a>
-							<a href="nano-gasa?idioma=es"><?php echo es; ?></a>
+							<a href="neuralmove?idioma=en"><?php echo en; ?></a>
+							<a href="neuralmove?idioma=es"><?php echo es; ?></a>
 						</div>
-						<div class="nanogasa-logo">
-							<img src="assets/images/contenidos/nanogasa_logo.png" alt="">
-						</div>
-						<div class="nanogasa-container">
-							<div class="nanogasa-product">
-								<img src="assets/images/contenidos/nanogasaProduct.png" alt="">
+						<div class="neural-container">
+							<div class="neural-logo">
+								<img src="assets/images/contenidos/neuralmove_logo.png" alt="">
 							</div>
-							<div class="nanoG-inner">
-								<p class="text-content"><?php echo textNanoG; ?></p>
-								<p class="text-content"><?php echo textNanoG2; ?></p>
+							<div class="neural-inner">
+								<p class="text-content"><?php echo textNeural; ?></p>
 								<a href="#"><button><?php echo buttonNanoG; ?></button></a>
 							</div>
+						</div>
+						<div class="neural-product">
+								<img src="assets/images/contenidos/neuralmove.png" alt="">
 						</div>
 					</div>
         </div>

@@ -34,6 +34,22 @@
     define("textNanoG2", "Está elaborada en algodón tejido en una malla ultra fina, impregnada de compuestos nanoestructurados de plata en cada una de sus fibras, lo que contribuye a la eliminación de hongos y bacterias que puedan estar presentes o que se encuentren en contacto con la herida. Además de evitar la formación de dichos microorganismos durante su correcto uso.");
     define("buttonNanoG", "IR AL SITIO WEB");
 
+    //neuralmove
+    define("textNeural", "El Neuralmove® es un neuroestimulador cuyos componentes son de tamaño nano, lo que posibilita que el dispositivo sea tan pequeño que pueda ser implantado en zonas de gran complejidad quirúrgica, potencializando los impulsos eléctricos en dicha área para que el paciente pueda ir recuperando su movilidad.");
+    
+    //contacto
+    define("titleContacto", "CONTACTO");
+    define("formName", "Nombre");
+    define("formOcupacion", "Ocupación");
+    define("formTel", "Teléfono");
+    define("formEmail", "Correo");
+    define("formAsunto", "Asunto");
+    define("formMensaje", "Mensaje");
+    define("formEnviar", "Enviar");
+    define("select1", "Deseo ser Distribuidor");
+    define("select2", "Deseo agendar una cita");
+    define("select3", "Otros");
+
     //footer general
     define("copy", "Copyright © Nano Creaciones. Todos los derechos reservados.");
     define("aviso", "Políticas de privacidad");

@@ -1,4 +1,4 @@
-.nano-gasa{
+.neuralmove{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -94,8 +94,9 @@
     }
 }
 
-.nanoG-content{
-	width: 83%;
+.neural-content{
+    width: 83%;
+    
 	height: 91vh;
     display: flex;
     flex-direction: column;
@@ -111,7 +112,7 @@
 		margin-top: 0;
 		display: flex;
 		flex-direction: column;
-	}
+    }
 
 	.idiomas{
 		display: flex;
@@ -123,131 +124,158 @@
 		}
 		a{
 			p{
-				color: #929292;
+                color: #fff;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 				@include tablet{
-					font-size: 17px;
-				}
-			}
+                    font-size: 17px;
+                    color: #929292;;
+                    text-shadow: none;
+                }
+                
+            }
+            
 		}
     }
-    .nanogasa-logo{
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 156px;
-        img{
-            height: 64px;
-            margin-right: 80px;
-            margin-bottom: 40px;
-            @include mobile{
-                margin: 0;
-            }
-        }
-        @include mobile{
-            margin-top: 40px;
-            width: 88%;
-        }
-    }
-    .nanogasa-container{
+    .neural-container{
         display: flex;
         width: 100%;
-        justify-content: space-between;
-        padding-right: 24px;
+        flex-direction: column;
+        padding-left: 120px;
         @include tablet{
             justify-content: flex-start;
             align-items: center;
             flex-direction: column;
+            padding-left: 0;
         }
         @include mobile{
             padding: 0;
         }
 
-        .nanogasa-product{
-            order: 1;
-            margin-left: 56px;
-            width: 50%;
+        .neural-logo{
+            width: 100%;
             display: flex;
-            height: 400px;
+            justify-content: flex-start;
+            margin-top: 152px;
             img{
-                width: auto;
-                height: 344px;
+                height: 64px;
+                margin-left: 0;
+                margin-bottom: 40px;
                 @include tablet{
-                    height: 216px;
-                    margin-bottom: 0;
+                    margin-left: 96px;
                 }
                 @include mobile{
-                    height: 184px;
+                    margin: 0;
                 }
             }
             @include tablet{
-                order: 2;
-                width: 70%;
-                height: 224px;
-                justify-content: flex-end;
-                padding-right: 24px;
+                margin-top: 160px;
             }
             @include mobile{
-                padding: 0;
-                margin: 0;
+                margin-top: 40px;
+                width: 88%;
             }
+        }
+        .neural-inner{
+            display: flex;
+            flex-direction: column;
+            width: 67%;
+            margin-bottom: 0;
+            @include tablet{
+                margin-left: 0;
+                width: 77%;
+                margin-bottom: 64px;
+                align-items: flex-start;
+                margin-left: 56px;
+               
+            }
+            @include mobile{
+                padding-right: 0;
+                align-items: center;
+                width: 92%;
+                margin-bottom: 56px;
+                margin-top: 32px;
+                margin-left: 0;
+            }
+    
+            .text-content{
+                margin-top: 0;
+                width: 90%;
+                color: black;
+                font-size: 12px;
+                font-family: 'Raleway-Medium';
+                @include tablet{
+                    width: 91%;
+                }
+                @include mobile{
+                    width: 95%;
+                    text-align: center;
+                }
+            }
+            button{
+                background: transparent;
+                border: 1px solid #000;
+                text-transform: uppercase;
+                padding: 10px 2em;
+                color: #000;
+                border-radius: 0;
+                font-size: 14px;
+                font-family: 'Raleway-Medium';
+                font-weight: normal;
+                margin-bottom: 0;
+                margin-top: 16px;
+                max-width: 168px;
+            }
+            button:hover{
+                background: #8dedf8;
+                border: 1px solid #8dedf8;
+                color: #fff;
+            }
+    
         }
     }
-	.nanoG-inner{
-        order: 2;
-		display: flex;
-		flex-direction: column;
-		width: 40%;
-		margin-bottom: 56px;
-		margin-left: 48px;
-		@include tablet{
-            order: 1;
-			margin-left: 0;
-			padding-right: 40px;
-			width: 87%;
-			margin-bottom: 64px;
-			text-align: right;
-			align-items: flex-end;
-		}
-		@include mobile{
-            padding-right: 0;
-            align-items: center;
-			width: 92%;
-			margin-bottom: 56px;
-			margin-top: 32px;
-		}
-
-		.text-content{
-			margin-top: 0;
-			width: 90%;
-            color: black;
-            font-size: 12px;
-            font-family: 'Raleway-Medium';
+    .neural-product{
+        margin-top: 0;
+        width: 100%;
+        display: flex;
+        height: auto;
+        justify-content: flex-end;
+        img{
+            width: auto;
+            height: 200px;
+            margin-bottom: 0;
             @include tablet{
-                width: 80%;
+                height: 120px;
+                margin-bottom: 0;
             }
             @include mobile{
-                width: 95%;
-                text-align: center;
+                height: 96px;
             }
         }
-        button{
-            background: transparent;
-            border: 1px solid #000;
-            text-transform: uppercase;
-            padding: 10px 2em;
-            color: #000;
-            border-radius: 0;
-            font-size: 14px;
-            font-family: 'Raleway-Medium';
-            font-weight: normal;
-            margin-bottom: 0;
-            margin-top: 32px;
+        @include tablet{
+            width: 70%;
+            height: 224px;
+            justify-content: flex-end;
+            padding-right: 24px;
         }
-        button:hover{
-            background: #8dedf8;
-            border: 1px solid #8dedf8;
-            color: #fff;
+        @include mobile{
+            width: 100%;
+            padding: 0;
+            margin: 0;
         }
+    }
+}
 
-	}
+.neural-mano{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 340px;
+    width: auto;
+
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
 }
