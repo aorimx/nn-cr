@@ -37,6 +37,18 @@
       //neuralmove
       define("textNeural", "The Neuralmove® is a neurostimulator whose components are nano-sized, which makes it possible for the device to be so small that it can be implanted in areas of great surgical complexity, potentiating the electrical impulses in this area so that the patient can recover his mobility.");
       
+      //contacto
+    define("titleContacto", "CONTACT");
+    define("formName", "Name");
+    define("formOcupacion", "Employment");
+    define("formTel", "Phone");
+    define("formEmail", "E-Mail");
+    define("formAsunto", "Subject");
+    define("formMensaje", "Message");
+    define("formEnviar", "SEND");
+    define("select1", "I want to be dealer");
+    define("select2", "I want to schedule an appointment");
+    define("select3", "Other");
     
     //footer general
     define("copy", "Copyright © Nano Creaciones. All rights reserved.");
