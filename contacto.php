@@ -90,21 +90,21 @@ include ("lang_".$_SESSION["idiomas"].".php");
 								</div>
 								<div class="contacto-inner">
 									<h2 class="title-nano"><?php echo titleContacto; ?></h2>
-									<form class="contact-form" action="#" method="POST" enctype="multipart/form-data">
+									<form id="form-mobile" class="contact-form" action="#" method="POST" enctype="multipart/form-data">
 										<div class="input-card">
-											<input type="text" name="name" value placeholder="<?php echo formName; ?>">
+											<input type="text" name="nombreM" value placeholder="<?php echo formName; ?>">
 										</div>
 										<div class="input-card">
-											<input type="text" name="ocupacion" value placeholder="<?php echo formOcupacion; ?>">			
+											<input type="text" name="ocuM" value placeholder="<?php echo formOcupacion; ?>">			
 										</div>
 										<div class="input-card2">
-										<input type="number" class="half-input" name="telefono" value placeholder="<?php echo formTel; ?>">
+										<input type="number" class="half-input" name="telM" value placeholder="<?php echo formTel; ?>">
 										</div>
 										<div class="input-card2">
-											<input type="email" class="half-input" name="correo" value placeholder="<?php echo formEmail; ?>">
+											<input type="email" class="half-input" name="emailM" value placeholder="<?php echo formEmail; ?>">
 										</div>
 										<div class="input-card">
-											<select name="asunto" id="" class="formSelect" name="subject">
+											<select name="asunM" id="" class="formSelect">
 												<option value="<?php echo formAsunto; ?>" disabled="" selected=""><?php echo formAsunto; ?></option>
 												<option value="<?php echo select1; ?>"><?php echo select1; ?></option>
 												<option value="<?php echo select2; ?>"><?php echo select2; ?></option>
@@ -112,7 +112,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
 											</select>
 										</div>
 										<div class="input-card">		
-											<textarea name="mensaje" placeholder="<?php echo formMensaje; ?>" ></textarea>
+											<textarea name="menM" placeholder="<?php echo formMensaje; ?>" ></textarea>
 										</div>
 										<button type="submit" class="btn-form"><?php echo formEnviar; ?></button>
 									</form>
@@ -189,21 +189,21 @@ include ("lang_".$_SESSION["idiomas"].".php");
 							</div>
 							<div class="contacto-inner">
 								<h2 class="title-nano"><?php echo titleContacto; ?></h2>
-								<form class="contact-form" action="#" method="POST" enctype="multipart/form-data">
+								<form id="contact-f" class="contact-form" action="" method="POST" enctype="multipart/form-data">
 									<div class="input-card">
-										<input type="text" name="name" value placeholder="<?php echo formName; ?>">
+										<input type="text" id="nombre" name="nombre" placeholder="<?php echo formName; ?>">
 									</div>
 									<div class="input-card">
-										<input type="text" name="ocupacion" value placeholder="<?php echo formOcupacion; ?>">			
+										<input type="text" id="ocupacion" name="ocu" placeholder="<?php echo formOcupacion; ?>">			
 									</div>
 									<div class="input-card2">
-									<input type="number" class="half-input" name="telefono" value placeholder="<?php echo formTel; ?>">
+									<input type="number" class="half-input" id="tel" name="tel" placeholder="<?php echo formTel; ?>">
 									</div>
 									<div class="input-card2">
-										<input type="email" class="half-input" name="correo" value placeholder="<?php echo formEmail; ?>">
+										<input type="email" class="half-input" id="correo" name="email" placeholder="<?php echo formEmail; ?>">
 									</div>
 									<div class="input-card">
-										<select name="asunto" id="" class="formSelect" name="subject">
+										<select name="asun" id="formSelect" class="formSelect">
 											<option value="<?php echo formAsunto; ?>" disabled="" selected=""><?php echo formAsunto; ?></option>
 											<option value="<?php echo select1; ?>"><?php echo select1; ?></option>
 											<option value="<?php echo select2; ?>"><?php echo select2; ?></option>
@@ -211,13 +211,13 @@ include ("lang_".$_SESSION["idiomas"].".php");
 										</select>
 									</div>
 									<div class="input-card">		
-										<textarea name="mensaje" placeholder="<?php echo formMensaje; ?>" ></textarea>
+										<textarea id="mensaje" name="men" placeholder="<?php echo formMensaje; ?>" ></textarea>
 									</div>
-									<button type="submit" class="btn-form"><?php echo formEnviar; ?></button>
+									<button type="submit" id="btn-form" class="btn-form"><?php echo formEnviar; ?></button>
 								</form>
 							</div>
 						</div>
-        	</div>
+        </div>
         <footer>
 					<div class="j-wrap-nosotros">
 						<div class="tag">
@@ -253,18 +253,18 @@ include ("lang_".$_SESSION["idiomas"].".php");
   <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 	<script src="assets/scripts/enviarForm.js"></script>
 	<script>
-      $('.contact-form').submit(function(e){
+      $('#contact-f').submit(function(e){
       	e.preventDefault();
       	$('input').removeClass('error');
-				$('input').removeClass('email-mg');
+			
       	$('textarea').removeClass('error');
       	$('label.error').remove();
-				var tel =$("input[name='telefono']");
-      	var name=$("input[name='name']");
-        var ocupacion=$("input[name='ocupacion']");
-      	var asunto=$("select[name='asunto']");
-      	var mensaje=$("textarea[name='mensaje']");
-      	var email=$("input[name='correo']");
+				var tel =$("input[name='tel']");
+      	var name=$("input[name='nombre']");
+        var ocupacion=$("input[name='ocu']");
+      	var asunto=$("select[name='asun']");
+      	var mensaje=$("textarea[name='men']");
+      	var email=$("input[name='email']");
       	var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
       	if(name.val() === ""){
       		$(name).addClass('error');
@@ -273,7 +273,8 @@ include ("lang_".$_SESSION["idiomas"].".php");
       	if(ocupacion.val() === ""){
       		$(ocupacion).addClass('error');
       		$(ocupacion).after('<label class="error"> Campo obligatorio</label>');
-        }
+				}
+				
       	if(asunto.val() === null){
       		$(asunto).addClass('error');
       		$(asunto).after('<label class="error"> Campo obligatorio</label>');
@@ -287,15 +288,61 @@ include ("lang_".$_SESSION["idiomas"].".php");
       		$(email).after('<label class="error"> El correo electrónico señalado es incorrecto</label>');	
 					$(email).addClass('email-mg');			
 					$(tel).addClass('email-mg');		
-      	}
+				} 
       	if($('label.error').length == 0){
 
           console.log("se enviara un correo");
           contactoEnviarMensajeBtn_click();
-          contactoEnviarDatos();
+          //contactoEnviarDatos();
       	}
       
 
+          return false;
+      });
+	</script>
+	<script>
+      $('#form-mobile').submit(function(e){
+      	e.preventDefault();
+      	$('input').removeClass('error');
+			
+      	$('textarea').removeClass('error');
+      	$('label.error').remove();
+				var tel =$("input[name='telM']");
+      	var name=$("input[name='nombreM']");
+        var ocupacion=$("input[name='ocuM']");
+      	var asunto=$("select[name='asunM']");
+      	var mensaje=$("textarea[name='menM']");
+      	var email=$("input[name='emailM']");
+      	var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+      	if(name.val() === ""){
+      		$(name).addClass('error');
+      		$(name).after('<label class="error"> Campo obligatorio</label>');
+      	}
+      	if(ocupacion.val() === ""){
+      		$(ocupacion).addClass('error');
+      		$(ocupacion).after('<label class="error"> Campo obligatorio</label>');
+				}
+				
+      	if(asunto.val() === null){
+      		$(asunto).addClass('error');
+      		$(asunto).after('<label class="error"> Campo obligatorio</label>');
+      	}
+      	if(mensaje.val() === ""){
+      		$(mensaje).addClass('error');
+      		$(mensaje).after('<label class="error"> Campo obligatorio</label>');
+      	}
+      	if(!pattern.test(email.val())){
+      		$(email).addClass('error');
+      		$(email).after('<label class="error"> El correo electrónico señalado es incorrecto</label>');	
+					$(email).addClass('email-mg');			
+					$(tel).addClass('email-mg');		
+				} 
+      	if($('label.error').length == 0){
+
+          console.log("se enviara un correo");
+          contactoEnviarMobile_click();
+          //contactoEnviarDatosMobile();
+      	}
           return false;
       });
 	</script>
